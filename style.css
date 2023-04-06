@@ -1,0 +1,543 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #8B48BF;
+    --secondary-color: #FAFAFA;
+    --terciary-color: #3CDDF3;
+    --horizontal-padding: 2rem;
+}
+
+/* Header  */
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+
+.contact-button {
+    display: none;
+}
+
+/* main  */
+
+.banner {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.banner-img-wrapper img {
+    width: 100%;
+}
+
+.banner-txt {
+    text-align: end;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.btn {
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+
+}
+
+.btn-purple {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.section-description {
+    background-color: var(--terciary-color);
+    margin: 0;
+    color: white;
+    width: 100vw;
+    padding: 1rem;
+
+}
+
+.section-description h3 {
+    font-weight: 700;
+    font-size: 2rem;
+
+}
+
+.section-description p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.benefits-section {
+    padding: 65px 0 30px 20px;
+}
+
+.benefit-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(139, 72, 191, 0.3);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.benefit-number {
+    border-radius: 20px;
+    background-color: #8B48BF;
+    color: white;
+    height: 40px;
+    padding: 10px 25px;
+}
+
+.benefit-header h6 {
+    padding: 10px;
+    margin: 0;
+}
+
+.benefit-description {
+    color: #B3B2B7;
+    margin: 18px;
+}
+
+.highlights-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.highlights-section h3 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn.btn-purple.player {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-hl.sanyo {
+    display: none;
+}
+
+.card-hl.navarro {
+    display: none;
+}
+
+.card-hl.lebron {
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    text-align: center;
+}
+
+.card-hl-img-wrapper {
+    position: relative;
+    bottom: 28px;
+}
+
+.card-hl.lebron h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-hl.lebron p {
+    color: #B9B9C1;
+    font-size: 15px;
+}
+
+.best-team-section {
+    background-color: var(--terciary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 45px;
+}
+
+.best-team-section h3 {
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.best-team-section .btn {
+    background-color: #232C50;
+    color: white;
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    background-color: #1E1E26;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.social-media {
+    display: flex;
+    order: 3;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.social-media img {
+    padding: 10px;
+}
+.footer-logo-media {
+    display: flex;
+}
+.logo-img {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu.menu-footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    order: 2;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+.menu.menu-footer .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.newsletter-form {
+    display: flex;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.footer-form-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    height: 44px;
+    border-radius: 30px;
+    width: 340px;
+}
+
+.newsletter-form button {
+    height: 47px;
+    width: 67px;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+
+.copyright {
+    color: #8C8C94;
+    order: 5;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 1440px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: block;
+        width: 50%;
+    }
+
+    .menu:hover {
+        cursor: pointer;
+        color: rgba(36, 46, 82, 0.6);
+    }
+
+    .contact-button {
+        display: block;
+    }
+
+    .menu-icon i {
+        display: none;
+    }
+
+    .header-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .banner {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .banner-txt {
+        display: flex;
+        padding: 100px;
+    }
+
+    .banner-img-wrapper {
+        padding: 100px;
+        width: 100%;
+
+    }
+
+    .banner-txt h2 {
+        font-size: 50px;
+    }
+
+    .banner-txt p {
+        padding-bottom: 10px;
+    }
+
+    .btn {
+        border: none;
+    }
+
+    .section-description {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section-description h3 {
+        width: 40%;
+    }
+
+    .section-description p {
+        width: 40%;
+    }
+
+    .benefits-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .benefit-number {
+
+        /* border-radius: 20%; */
+        background-color: var(--primary-color);
+        height: 40px;
+        padding: 10px 25px;
+    }
+
+    .benefit-card {
+        width: 35%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .benefit-header {
+        background-color: white;
+
+    }
+
+    .benefit-card.third {
+        align-self: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-hl.sanyo {
+        width: 445px;
+        display: inline-block;
+        background-color: var(--secondary-color);
+        text-align: center;
+    }
+
+    .card-hl-img-wrapper {
+        position: relative;
+        bottom: 28px;
+    }
+
+    .card-hl.sanyo h6 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .card-hl.sanyo p {
+        color: #B9B9C1;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .card-hl.card-hl.navarro {
+        display: inline-block;
+
+        background-color: var(--secondary-color);
+
+        text-align: center;
+        width: 445px;
+    }
+
+    .card-hl-img-wrapper {
+        position: relative;
+        bottom: 28px;
+    }
+
+    .card-hl.card-hl.navarro h6 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .card-hl.card-hl.navarro p {
+        color: #B9B9C1;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .card-hl.lebron {
+        background-color: var(--secondary-color);
+        text-align: center;
+        width: 445px;
+    }
+
+    .card-hl-img-wrapper {
+        position: relative;
+        bottom: 28px;
+    }
+
+    .card-hl.lebron h6 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .card-hl.lebron p {
+        color: #B9B9C1;
+        font-size: 15px;
+        padding: 20px;
+    }
+
+
+    .best-team-section {
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        padding: 64px;
+    }
+
+    .best-team-section h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .best-team-section .btn {
+        background-color: #FFFFFF;
+        color: #8B48BF;
+ 
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+
+        .logo-img {
+            order: 1;
+        }
+
+        .social-media {
+            order: 2;
+        }
+        .menu.menu-footer {
+            order: 3;
+        }
+
+        .footer-form-p {
+            order: 4;
+
+        }
+        .footer-logo-media {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .newsletter-form input {
+            height: 44px;
+            border-radius: 30px;
+            width: 201px;
+        }
+        
+        .btn.btn-purple.player {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .btn.btn-purple:hover {
+            cursor: pointer;
+            background-color: rgba(139, 72, 191, 0.7);
+        }
+        
+}
