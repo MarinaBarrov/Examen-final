@@ -317,7 +317,7 @@ ul li {
         width: 50%;
     }
 
-    .menu:hover {
+    li:hover {
         cursor: pointer;
         color: rgba(36, 46, 82, 0.6);
     }
